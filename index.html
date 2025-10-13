@@ -259,7 +259,6 @@
             margin: 0;
         }
 
-        /* The Photo Grid (INSIDE THE CARD) */
         .photo-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -275,6 +274,7 @@
             overflow: hidden;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             aspect-ratio: 1 / 1;
+            position: relative; /* Add this for positioning the number */
         }
 
         .photo-grid .card:hover {
@@ -288,6 +288,7 @@
             height: 100%;
             object-fit: cover;
         }
+
         /* New CSS for the number circle */
         .photo-grid .card .card-number {
             position: absolute; /* Position relative to the card */
